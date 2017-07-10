@@ -1,27 +1,6 @@
 import React, { Component } from 'react';
 import { AppRegistry, Text, View, TouchableHighlight, Alert } from 'react-native';
 
-// class animals extends Component {
-//   render() {
-//     return (
-//       <Text>Hello {this.props.animal}!</Text>
-//     );
-//   }
-// }
-//
-//
-// export default class HelloWorldApp extends Component {
-//   render() {
-//     return (
-//       <View style={{alignItems: 'center'}}>
-//         <Text>Hello world!</Text>
-//         <animals animal="doggo"></animals>
-//     </View>
-//     );
-//   }
-// }
-
-// var whatIsThis = '';
 
 class Champs extends Component {
   render() {
@@ -46,28 +25,43 @@ export default class LotsOfGreetings extends Component {
               'Alert Title',
               "haha a man cat killed you",
             )}>
-            <Champs name='Rengar' />
+            <View>
+              <Champs name='Rengar' />
+            </View>
           </TouchableHighlight>
           <TouchableHighlight
-            onPress={() => Alert.alert2(
+            onPress={() => Alert.alert(
               'ooof',
               "haha a man cow Killed you",
             )}>
-            <Champs name='Alistar' />
+            <View>
+              <Champs name='Alistar' />
+            </View>
           </TouchableHighlight>
           <TouchableHighlight
-            onPress={() => Alert.alert3(
+            onPress={() => Alert.alert(
               'Ouch',
               "haha a big scary man killed you",
             )}>
-            <Champs name='Darius' />
+            <View>
+              <Champs name='Darius' />
+            </View>
           </TouchableHighlight>
 
 
         </View>
 
         <View style={{alignItems: 'flex-start'}}>
-          <Champs name="Sona" />
+          <TouchableHighlight
+            onPress={() => Alert.alert(
+              'Ouch',
+              "haha a Musician killed you",
+            )}>
+            <View>
+              <Champs name="Sona" />
+            </View>
+          </TouchableHighlight>
+
         </View>
       </View>
 
