@@ -19,8 +19,14 @@
     "preset": "jest-expo"
   },
   "dependencies": {
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
     "expo": "^18.0.3",
+    "express": "^4.15.3",
+    "knex": "^0.13.0",
+    "morgan": "^1.8.2",
     "npm": "^4.6.1",
+    "pg": "^6.4.0",
     "react": "16.0.0-alpha.12",
     "react-native": "^0.45.1"
   }
